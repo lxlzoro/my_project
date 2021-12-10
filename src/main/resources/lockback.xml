@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true">
+    <appender name="STDOUT" class = "">
+        <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{100} %line- %msg%n</pattern>
+        <charset>UTF-8</charset>
+    </appender>
+    <appender name="FILE" class="">
+        <rollingPolicy class = "">
+            <fileNamePattern>${ocsp.outter.root:- }logs/%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{100} %line- %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+
+    </appender>
+    <logger name="com.test" additivity="false"
+            level="debug">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </logger>
+    <logger name="logging.level.org.springframework.web" additivity="false"
+            level="debug">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+
+</configuration>
