@@ -20,7 +20,6 @@ public class TPersonInfoController {
 
     /**
      * lxl's first springboot hello world
-     *
      * @return String
      */
     @RequestMapping("hello")
@@ -32,6 +31,11 @@ public class TPersonInfoController {
     @RequestMapping("/findAll")
     public List<TPersonInfo> getPersonInfoList() {
         return tPersonInfoService.getPersonInfoList();
+    }
+
+    @RequestMapping("/getAllList")
+    public List<TPersonInfo> getAllList(){
+        return tPersonInfoService.getPersonInfos();
     }
 
 }
