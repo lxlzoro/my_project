@@ -1,0 +1,5 @@
+com\example\myproject\controller\TPersonInfoController.class
+com\example\myproject\service\TPersonInfoService.class
+com\example\myproject\MyProjectApplication.class
+com\example\myproject\dao\TPersonInfoDao.class
+com\example\myproject\entity\TPersonInfo.class
