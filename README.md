@@ -1,2 +1,2 @@
 # my_project
-一条妄想翻身的咸鱼
+springboot+mybatis-plus+mysql整合
