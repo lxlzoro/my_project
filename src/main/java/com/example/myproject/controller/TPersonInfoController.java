@@ -21,12 +21,12 @@ public class TPersonInfoController {
     /**
      * lxl's first springboot hello world
      *
-     * @return
+     * @return String
      */
     @RequestMapping("hello")
     public String showhello() {
         logger.info("新项目启动ing......");
-        return "hello lxl,start your first Spring Boot";
+        return "start to Spring Boot";
     }
 
     @RequestMapping("/findAll")
