@@ -9,4 +9,11 @@ public class TPersonInfo {
     private int age;
     private int sex;
     private String address;
+
+    public TPersonInfo(String name, int age, int sex, String address) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.address = address;
+    }
 }
