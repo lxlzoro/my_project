@@ -7,9 +7,9 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * create by: lxl
- * description: 线程池demo
- * create time: 13:37 2021/12/16
+ * @author liuxiaolei
+ * @date   2021/12/16 18:08
+ * @description：
  */
 public class ThreadPoolDemo {
     //核心线程数
