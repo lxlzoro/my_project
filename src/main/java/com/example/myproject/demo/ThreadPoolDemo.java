@@ -25,18 +25,16 @@ public class ThreadPoolDemo {
 
     private static  ThreadPoolExecutor threadPoolExecutor ;
 
-    private static final ThreadPoolDemo instance = new ThreadPoolDemo();
+    private static final ThreadPoolExecutor instancene =new  ThreadPoolExecutor(CORE_POOL_SIZE,MAXIMUM_POOL_SIZE,KEEP_ALIVE_TIME,TimeUnit.SECONDS,blockingQueue);
 
 
     /**
      * 创建一个单例 只对外提供一个调用接口
      * @return
      */
-    public static ThreadPoolDemo getInstance() {
-        if (threadPoolExecutor.isShutdown()){
-            threadPoolExecutor= new ThreadPoolExecutor(CORE_POOL_SIZE,MAXIMUM_POOL_SIZE,KEEP_ALIVE_TIME,TimeUnit.SECONDS,blockingQueue);
-        }
-        return instance;
+    public static ThreadPoolExecutor getInstance() {
+        return instancene;
+
     }
 
 
